@@ -1,0 +1,22 @@
+[    
+    {
+        "title": "DEFENSIVOS",
+        "image": "../static/images/card1.png"
+    },
+    {
+        "title": "NUTRIÇÃO",
+        "image": "../images/card2.png"
+    },
+    {
+        "title": "FERTILIZANTES",
+        "image": "../images/card3.png"
+    },
+    {
+        "title": "SEMENTES",
+        "image": "../images/card4.png"
+    },
+    {
+        "title": "GRÃOS",
+        "image": "../images/card5.png"
+    }
+]
