@@ -1,0 +1,82 @@
+.pagecontent {
+    background-image: url('../images/page/Background.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-size: cover;
+    background-position: center;
+
+    font-weight: 400;
+}
+
+.pagecontent button {
+    background: #0B8C3D;
+    color: #fff;
+    border: solid 2px #0B8C3D;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: .6em;
+
+    width: 150px;
+    height: 35px;
+
+    margin-top: 10px;
+}
+
+.pagecontent button img {
+    padding-left: 15px;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 200px;
+}
+
+.leftside span {
+    color: #1BD569;
+    font-weight: bold;
+    font-size: .8em;
+    padding-bottom: 10px;
+}
+
+.leftside h1 {
+    font-weight: 200;
+    color: #fff;
+}
+
+h1:last-of-type {
+    font-weight: bold;
+}
+
+.roll {
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+}
+
+.roll a {
+    text-decoration: none;
+    color: #0B8C3D;
+    border: none;
+    background-color: none;
+}
+
+.roll button {
+    background: none;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roll img {
+    cursor: pointer;
+    margin-left: 20px;
+    background: #0B8C3D;
+    border-radius: 50%;
+    padding: 8px 15px 8px 0px;
+}
