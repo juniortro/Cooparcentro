@@ -1,13 +1,18 @@
 import React from 'react';
 
-const NoticeCard = ( background ) => {
+const NoticeCard = ( props ) => {
     return (
-        <div>
-            <div className="noticecardtop">
-                <img src={background.id} alt="bg"/>
+            <div className="noticecard">
+                <div className="shadow">
+
+                    <img src={props.bg} alt="bg"/>
+
+                </div>
                 
+                <button className="notice-btn">Nome da Categoria</button>
+                <h5>19 DE MARÇO DE 2020</h5>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
             </div>
-        </div>
     )
 };
 

@@ -1,0 +1,163 @@
+.noticepage {
+    width: 98vw;
+    height: 800px;
+    
+    display: flex;
+    background: #E4E4E4;
+}
+
+.noticecard {
+    background: #FFF;
+    width: 300px;
+    height: 320px;
+    margin: 20px 20px 10px 0;
+}
+
+.noticecard img {
+    background: rgba(0,0,0,.4);
+    z-index: -1;
+}
+
+.noticecard h5 {
+    position: relative;
+    left: 10%;
+    color: #1BD569;
+}
+
+.noticecard p {
+    position: relative;
+    left: 10%;
+    font-weight: bold;
+    font-size: .8em;
+    width: 280px;
+}
+
+.notice-btn {
+    position: relative;
+    top: -20px;
+    left: 15%;
+
+    background: #0B8C3D;
+    color: #fff;
+    border: solid 2px #0B8C3D;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: .6em;
+
+    width: 150px;
+    height: 35px;
+}
+
+.lastnews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 49vw;
+}
+
+.lastnews img {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.lastnews h2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 35px;
+}
+
+.nextevents {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 49vw;
+}
+
+.nextevents h2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.eventcard {
+    height: 350px;
+    width: 700px;
+}
+
+.event-text {
+    position: relative;
+    bottom: 80px;
+    left: 10px;
+    width: 40vw;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.event-text p {
+    color: #0B8C3D;
+    font-size: .6em;
+    margin-top: 15px;
+}
+
+.btn-news {
+    position: relative;
+    top: 6px;
+    right: 430px;
+
+    background: #0B8C3D;
+    color: #fff;
+    border: solid 2px #0B8C3D;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: .6em;
+
+    width: 150px;
+    height: 35px;
+}
+
+.btn-events {
+    position: relative;
+    top: 6px;
+    left: 50px;
+
+    background: #0B8C3D;
+    color: #fff;
+    border: solid 2px #0B8C3D;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: .6em;
+
+    width: 150px;
+    height: 35px;
+}
+
+.shadow {
+    background: red;
+    z-index: 2;
+}
+
+@media (max-width:800px){
+    .noticepage {
+        max-width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .lastnews {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .nextevents {
+        max-width: 100%;
+        height: auto;
+    }
+}

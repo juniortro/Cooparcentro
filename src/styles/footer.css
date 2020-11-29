@@ -93,3 +93,13 @@
 ul {
     list-style-image: url('../images/svg/setalista.svg');
 }
+
+@media (max-width:800px) {
+    .footer {
+        max-width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+    }
+}

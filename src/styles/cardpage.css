@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
 
-    height: 100vh;
+    height: 750px;
 }
 
 .cards {
@@ -24,6 +24,7 @@
 .cards h2 {
     color: white;
     position: absolute;
+    margin-left: 80px;
 }
 
 .cards img {
@@ -53,9 +54,9 @@
 }
 
 .cardpage button {
-    position: absolute;
+    position: relative;
+    top: 160px;
     right: 50vw;
-    margin-top: 500px;
 
     background: #0B8C3D;
     color: #fff;
@@ -70,4 +71,22 @@
 
 .cardpage button img {
     padding-left: 15px;
+}
+
+@media (max-width: 800px) {
+    .cardpage{
+        max-width: 800px;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .maincard {
+        max-width: 100%;
+    }
+    .cards {
+        max-width: 100%;
+        height: auto;
+    }
 }

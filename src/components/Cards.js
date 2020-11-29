@@ -1,11 +1,10 @@
 import React from 'react';
-import imagem from '../static/images/card1.png';
 
-const Cards = ({title, image}) => {
+const Cards = (props) => {
     return (
         <div className="cards">
-            <h2>{title}</h2>
-            <img src={imagem} alt="card"/>
+            <h2>{props.title}</h2>
+            <img src={props.image} alt="card"/>
         </div>
     )
 }

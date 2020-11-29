@@ -18,6 +18,7 @@ const Header = () => {
                 <a href="#trabalheconosco">TRABALHE CONOSCO</a>
                 <a href="#contato">CONTATO</a>
             </ul>
+            <button className="hamburger" id="hamburger">≣</button>
             <div className="contacts">
                 <img src={Facebook} alt=""/>
                 <img src={Instagram} alt=""/>

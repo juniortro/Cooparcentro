@@ -58,3 +58,19 @@
     margin-right: 20px;
 }
 
+.hamburger {
+    display: none;
+    border: none;
+    color: #000;
+    font-size: 40px;
+}
+
+@media (max-width: 800px){
+    .container ul{
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

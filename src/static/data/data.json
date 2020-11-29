@@ -1,7 +1,7 @@
 [    
     {
         "title": "DEFENSIVOS",
-        "image": "../static/images/card1.png"
+        "image": "src/static/images/card1.png"
     },
     {
         "title": "NUTRIÇÃO",
