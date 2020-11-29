@@ -2,11 +2,16 @@ import React from 'react';
 import Cards from './Cards';
 import database from '../static/data/data.json';
 import seta from '../images/svg/seta.svg';
+import {Element} from 'react-scroll';
 import '../styles/cardpage.css';
 
 const CardPage = () => {
     return (
+
+
         <div className="cardpage">
+            <Element name="cardpage" >
+            </Element>
             <div className="maincard">
                 <h2>LOREM IPSUM DOLOR SIT</h2>
                 <h2>AMET, CONSECTETUR ADIPISCING ELIT.</h2>
@@ -16,9 +21,10 @@ const CardPage = () => {
             return <Cards title={item.title} image={item.image} />
             })}
 
-            <button>SAIBA MAIS <img src={seta} /></button>
+            <button>SAIBA MAIS <img src={seta} alt="seta"/></button>
             
         </div>
+
     )
 };
 
