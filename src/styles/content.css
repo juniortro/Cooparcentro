@@ -7,6 +7,8 @@
     background-position: center;
 
     font-weight: 400;
+
+    overflow: hidden;
 }
 
 .pagecontent button {
@@ -57,7 +59,7 @@ h1:last-of-type {
     bottom: 20px;
 }
 
-.roll a {
+.roll span {
     text-decoration: none;
     color: #0B8C3D;
     border: none;

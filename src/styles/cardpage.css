@@ -1,20 +1,28 @@
 .cardpage {
-    display: flex;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: 45% 45%;
+    grid-template-columns: 25% 25% 25%;
+    gap: 20px;
 
-    height: 750px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
 }
 
 .cards {
     display: flex;
     align-items: center;
     justify-items: center;
-    margin-right: 20px;
+    margin: 0px 20px 10px 0px;
     cursor: pointer;
     background-color: rgba(0,0,0,.4);
+
+    position: relative;
+    width: 300px;
+    height: 200px;
 }
 
 .cards:hover {
@@ -24,20 +32,22 @@
 .cards h2 {
     color: white;
     position: absolute;
-    margin-left: 80px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .cards img {
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     background: black;
     z-index: -1;
 }
 
 .maincard {
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     margin-right: 20px;
+    font-size: .8em;
 }
 
 .maincard h2{
@@ -54,9 +64,12 @@
 }
 
 .cardpage button {
-    position: relative;
-    top: 160px;
-    right: 50vw;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin: 20px;
 
     background: #0B8C3D;
     color: #fff;
@@ -64,29 +77,36 @@
     border-radius: 2px;
     font-weight: bold;
     font-size: .6em;
-
     width: 150px;
     height: 35px;
+
 }
 
 .cardpage button img {
     padding-left: 15px;
 }
 
-@media (max-width: 800px) {
-    .cardpage{
-        max-width: 800px;
+@media (max-width: 1210px) {
+    .cardpage {
+        grid-template-columns: 45% 45%;
         height: auto;
+    }
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .cardpage button {
+        position: static;
+        margin-left: 40vw;
     }
-    .maincard {
-        max-width: 100%;
-    }
-    .cards {
-        max-width: 100%;
+}
+
+@media (max-width: 690px) {
+    .cardpage{
+        grid-template-columns: 90%;
+        justify-items: center;
         height: auto;
+    }
+
+    .cardpage button {
+        position: static;
+        margin-left: 30vw;
     }
 }

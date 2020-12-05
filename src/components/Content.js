@@ -21,7 +21,7 @@ const Content = () => {
             duration={600}
             >
                 <div className="roll">
-                    <button href="#roll"><a href="#roll">ROLE A PÁGINA</a> <img src={mouse} alt="mouse"/></button>
+                    <button href="#roll"><span>ROLE A PÁGINA</span><img src={mouse} alt="mouse"/></button>
                 </div>
             </Link>
 

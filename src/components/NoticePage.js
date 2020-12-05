@@ -15,20 +15,20 @@ const NoticePage = () => {
         <div className="noticepage">
             <div className="lastnews">
                 <h2>ÚLTIMAS NOTÍCIAS</h2>
-                    <NoticeCard bg={Notice1}/>
-                    <NoticeCard bg={Notice2}/>
-                    <NoticeCard bg={Notice3}/>
-                    <NoticeCard bg={Notice4}/>
+                <NoticeCard bg={Notice1} />
+                <NoticeCard bg={Notice2} />
+                <NoticeCard bg={Notice3} />
+                <NoticeCard bg={Notice4} />
+                <button className="btn-news">MAIS NOTÍCIAS <img src={seta} alt="seta" /></button>
             </div>
 
             <div className="nextevents">
                 <h2>PRÓXIMOS EVENTOS</h2>
-                <EventCard bg={Evento1}/>
-                <EventCard bg={Evento2}/>
+                <EventCard bg={Evento1} />
+                <EventCard bg={Evento2} />
 
-                
-                <button className="btn-news">MAIS NOTÍCIAS <img src={seta} alt="seta"/></button>
-                <button className="btn-events">MAIS EVENTOS <img src={seta} alt="seta"/></button>
+
+                <button className="btn-events">MAIS EVENTOS <img src={seta} alt="seta" /></button>
             </div>
 
         </div>
