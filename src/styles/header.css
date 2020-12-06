@@ -65,12 +65,50 @@
     font-size: 40px;
 }
 
+.nav-hamburger {
+    display: none;
+}
+
 @media (max-width: 800px){
     .container ul{
         display: none;
     }
 
+    .contacts {
+        display: none;
+    }
+
     .hamburger {
         display: block;
+        background: transparent;
+        cursor: pointer;
+
+        position: relative;
     }
+    
+    .hamburger:focus {
+        outline: none;
+    }
+    
+   .container a {
+       margin: 0px;
+       padding: 0px;
+   }
+
+    .nav-hamburger.show-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px;
+        background: #1BD569;
+        width: 150px;
+        height: 200px;
+        position: absolute;
+        right: 15%;
+        top: 10%;
+        border: solid 2px #0B8C3D;
+        border-radius: 10px;
+    }
+
+    
 }

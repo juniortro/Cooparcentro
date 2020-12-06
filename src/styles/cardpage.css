@@ -92,6 +92,10 @@
         height: auto;
     }
 
+    .cards {
+        margin-top: 10px;
+    }
+
     .cardpage button {
         position: static;
         margin-left: 40vw;
@@ -106,6 +110,10 @@
         height: auto;
     }
     
+    .maincard {
+        margin-top: 10px;
+    }
+
     .cardpage button {
         position: static;
         margin-left: 30vw;

@@ -6,6 +6,11 @@ import Facebook from '../images/svg/facebook.svg';
 import Phone from '../images/svg/phone.svg';
 import '../styles/header.css';
 
+function showNav () {
+    const nav = document.querySelector('.nav-hamburger');
+    nav.classList.toggle('show-nav')
+}
+
 const Header = () => {
     return (
         <div className="container">
@@ -18,7 +23,15 @@ const Header = () => {
                 <a href="#trabalheconosco">TRABALHE CONOSCO</a>
                 <a href="#contato">CONTATO</a>
             </ul>
-            <button className="hamburger" id="hamburger">≣</button>
+            <nav className="nav-hamburger">
+                <a href="#home">HOME</a>
+                <a href="#quemsomos">QUEM SOMOS</a>
+                <a href="#servicos">SERVIÇOS</a>
+                <a href="#noticias">NOTÍCIAS</a>
+                <a href="#trabalheconosco">TRABALHE CONOSCO</a>
+                <a href="#contato">CONTATO</a>
+            </nav>
+            <button className="hamburger" id="hamburger" onClick={showNav}>≣</button>
             <div className="contacts">
                 <img src={Facebook} alt=""/>
                 <img src={Instagram} alt=""/>

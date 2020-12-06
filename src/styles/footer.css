@@ -113,17 +113,21 @@
     .footer {
         display: flex;
         flex-direction: column;
-        height: auto;
-        width: 100%;
     }
 
     .logo-footer {
+        padding: 0;
         display: flex;
         justify-content: center;
+    }
+    .logo-footer img {
+        margin: 0;
+        align-content: center;
     }
 
     .mapa {
         display: flex;
+        margin: 0;
         justify-content: center;
     }
 
@@ -134,11 +138,21 @@
 
     .midias {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .midias h2 {
+        display: flex;
         justify-content: center;
     }
 
     .footer-contacts {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .endpage {
