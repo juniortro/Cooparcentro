@@ -6,9 +6,8 @@
 
     justify-content: center;
     align-items: center;
-    margin: 10px;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
 }
 
@@ -89,6 +88,7 @@
 @media (max-width: 1210px) {
     .cardpage {
         grid-template-columns: 45% 45%;
+        grid-template-rows: auto;
         height: auto;
     }
 
@@ -101,10 +101,11 @@
 @media (max-width: 690px) {
     .cardpage{
         grid-template-columns: 90%;
+        grid-template-rows: auto;
         justify-items: center;
         height: auto;
     }
-
+    
     .cardpage button {
         position: static;
         margin-left: 30vw;

@@ -4,7 +4,3 @@ button{
 button:hover {
     opacity: .9;
 }
-
-div {
-    overflow: hidden;
-}
